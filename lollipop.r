@@ -1,9 +1,9 @@
 # ----------------------------------- lollipop code
 # this uses ggplot2 to create a nice looking lollipop chart of selected GO terms, which were selected after running a GO enrichment analysis
-https://r-charts.com/ranking/lollipop-chart-ggplot2/ - ggplot - what I used as a base for the lollipop chart below
-https://amigo.geneontology.org/amigo/search/ontology - AmiGO - what I used to look up terms to get total number of genes
+https://r-charts.com/ranking/lollipop-chart-ggplot2/ - ggplot - used as a base for the lollipop chart below
+https://amigo.geneontology.org/amigo/search/ontology - AmiGO - used to look up terms to get total number of genes
 
-# 1_PPVvsControl_ROSOonly_UP.csv
+# read in selected GO terms
 IN <- read.csv("chosen_GO_terms.csv")
 IN=IN[rev(order(IN$FDR)),]  
 df <- data.frame(
