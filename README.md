@@ -1,5 +1,5 @@
 # handy RNAseq summary functions
 - This includes:
-  - ggplot2 volcano plot with customisation
-  - ggplot 2 lollipop plot with customisation
-  - some functions to convert DGE list from csv to word
+	- volcano plots of DEGs with some extra customisation for gene labels
+	- lollipop plots for showing selected set of most interesting significant GO terms
+	- printing a DEG list out as a word document - handy for when this needs to go into Supplementary
